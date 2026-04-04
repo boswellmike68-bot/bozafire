@@ -85,6 +85,12 @@ function App() {
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <span className="text-xs text-green-400/60 font-mono">FINANCIAL LUNGS: ACTIVE</span>
           </div>
+          <a
+            href="/api/get-api-key"
+            className="inline-block mt-5 px-6 py-2.5 border border-cyan-500/40 rounded text-cyan-400 font-mono text-sm tracking-wider hover:bg-cyan-500/10 transition-colors"
+          >
+            Buy Credits
+          </a>
         </div>
       </div>
 
