@@ -91,6 +91,22 @@ function App() {
           >
             Buy Credits
           </a>
+          <div className="mt-4 flex items-center justify-center gap-3">
+            {[
+              { name: 'Starter', credits: 50, price: 5 },
+              { name: 'Builder', credits: 200, price: 15 },
+              { name: 'Pro', credits: 1000, price: 60 },
+            ].map((tier) => (
+              <div
+                key={tier.name}
+                className="px-4 py-2.5 bg-cyan-500/5 border border-cyan-500/15 rounded text-center"
+              >
+                <div className="text-cyan-400/80 font-mono text-xs font-bold">{tier.name}</div>
+                <div className="text-white/70 font-mono text-sm mt-0.5">{tier.credits} credits</div>
+                <div className="text-cyan-400/40 font-mono text-xs mt-0.5">${tier.price}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
