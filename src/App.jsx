@@ -85,6 +85,12 @@ function App() {
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <span className="text-xs text-green-400/60 font-mono">FINANCIAL LUNGS: ACTIVE</span>
           </div>
+          <p className="mt-5 text-cyan-400/50 font-mono text-xs leading-relaxed max-w-sm mx-auto">
+            Bozafire runs itself — fast, simple, credit-based AI access with no subscriptions and no friction. Buy credits, plug in, and build.
+          </p>
+          <p className="mt-2 text-cyan-400/40 font-mono text-xs leading-relaxed max-w-sm mx-auto">
+            Pay only for what you use. No lock-ins. No hidden fees. Just clean, predictable AI power.
+          </p>
           <a
             href="/api/get-api-key"
             className="inline-block mt-5 px-6 py-2.5 border border-cyan-500/40 rounded text-cyan-400 font-mono text-sm tracking-wider hover:bg-cyan-500/10 transition-colors"
