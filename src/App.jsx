@@ -5,12 +5,14 @@ import ApiKeyManager from './components/ApiKeyManager'
 import CreditDashboard from './components/CreditDashboard'
 import CreditPurchase from './components/CreditPurchase'
 import RenderInterface from './components/RenderInterface'
+import SponsorPage from './components/SponsorPage'
 
 const TABS = [
   { id: 'api', name: 'API KEY', icon: '🔐' },
   { id: 'credits', name: 'CREDITS', icon: '💎' },
   { id: 'purchase', name: 'PURCHASE', icon: '💳' },
   { id: 'render', name: 'RENDER', icon: '🎬' },
+  { id: 'sponsor', name: 'SPONSOR', icon: '🫁' },
 ];
 
 function TabButton({ tab, isActive, onClick }) {
@@ -49,6 +51,8 @@ function App() {
         return <CreditPurchase />;
       case 'render':
         return <RenderInterface />;
+      case 'sponsor':
+        return <SponsorPage />;
       default:
         return <ApiKeyManager onKeyCreated={handleKeyCreated} />;
     }
