@@ -2,9 +2,9 @@ name: Bozafire CI/CD
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 env:
   NODE_VERSION: '20'
